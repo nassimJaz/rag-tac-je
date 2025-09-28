@@ -1,6 +1,6 @@
 # Projet RAG (Retrieval-Augmented Generation)
 
-Ce projet est une application RAG qui permet de répondre à des questions axé data analyst en se basant sur un ensemble de documents. L'application ingère des documents, les stocke dans une base de données vectorielle, et utilise un modèle de langage pour générer des réponses précises à partir des documents les plus pertinents. Elle retourne dans ces tables pertinantes les variables pertinantes.
+Ce projet est un chatbot conçu spécifiquement pour les Junior-Entreprises. Sa mission est de répondre à leurs questions complexes, qu'elles portent sur le cadre légal, les processus internes, la trésorerie ou les normes qualité. L'application fonctionne sur le principe du RAG (Retrieval-Augmented Generation) : elle ingère un ensemble de documents de référence (normes, guides, documents légaux), les analyse et les stocke. Lorsqu'une question est posée, le chatbot recherche les informations les plus pertinentes dans sa base de connaissances et s'appuie sur un modèle de langage pour formuler une réponse précise et contextualisée.
 
 ## Questions pertinantes
 
