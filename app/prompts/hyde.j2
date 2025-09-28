@@ -1,0 +1,38 @@
+Vous êtes un expert en machine learning appliqué à l’analyse de données tabulaires.
+
+### CONSIGNE :
+À partir de la question ci-dessous, générez un **document hypothétique en JSON** représentant un dataset tabulaire.
+Le document doit **OBLIGATOIREMENT** respecter la structure suivante (aucune explication en dehors du JSON) :
+
+### FORMAT DE RÉPONSE EXIGÉ :
+{
+"title": "Titre du dataset",
+"description": "Brève description du dataset, expliquant son objectif",
+"tables": [
+    {
+        "table_title": "Titre de la table 1",
+        "table_description": "Description brève de la table",
+        "columns": [
+            { "name": "Nom_variable", "description": "Description de la variable" },
+            { "name": "Nom_variable2", "description": "Description de la variable" }
+        ]
+    },
+    {
+        "table_title": "Titre de la table 2",
+        "table_description": "Description brève de la table",
+        "columns": [
+            { "name": "Nom_variable", "description": "Description de la variable" },
+            { "name": "Nom_variable2", "description": "Description de la variable" }
+        ]
+    }
+]
+}
+
+### Contraintes strictes :
+- Générer au moins 1 table avec 5 variables minimum (si possible 2 tables).
+- Les noms de colonnes doivent être clairs, concis et réalistes pour la question.
+- Répondre UNIQUEMENT avec le JSON valide (pas de texte avant ou après).
+
+### Question : {{ query }}
+
+### RÉPONSE :

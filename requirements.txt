@@ -1,0 +1,25 @@
+# Haystack packages
+haystack-ai 
+qdrant-haystack
+ollama-haystack
+sentence-transformers
+
+# PDF loader backend
+pypdf
+# Auto detect lang of Docs
+langdetect
+
+# Load .env automatically
+python-dotenv
+
+# Portkey
+portkey-ai
+
+# Backoff for retries
+backoff
+
+# Testing
+pytest
+
+#Streamlit
+streamlit
