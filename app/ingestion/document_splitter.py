@@ -6,7 +6,7 @@ import logging
 from app.load_secrets import LoadSecrets
 from app.ingestion.document_loader import DocumentLoader
 from app.ingestion.document_process import DocumentProcess
-from langdetect import detect
+from langdetect import detect, LangDetectException
 
 logger = logging.getLogger(__name__)
 
@@ -67,7 +67,11 @@ class DocumentSplitting:
         for doc in docs:
             try :
                 # Detect language to apply appropriate splitting rules.
-                lang = detect(doc.content) if doc.content else "fr" 
+                
+                try :
+                    if doc.content: lang = detect(doc.content)
+                except LangDetectException as e:
+                    lang = "fr"
                 docs_split = self.get_splitter(lang).run(documents=[doc])
                 self.set_docs(docs_split.get("documents"))
             except Exception as e:
