@@ -24,9 +24,9 @@ class QdrantRetriever:
         return cls._instance
     
     def __init__(self):
+        self.qdrant_store = QdrantStore()
         if not self._initialized:
             self.load_secrets = LoadSecrets()
-            self.qdrant_store = QdrantStore()
             self.qdrant_embedding_query = QdrantEmbeddingQuery()
             self.document_process = DocumentProcess()
             self.hyde = PipelineHydeRetriever()
