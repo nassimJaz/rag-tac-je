@@ -30,7 +30,7 @@ Voici une liste de question pour tester le RAG rapidement :
     ```bash
     docker compose up -d
     ```
-3. **Streamlit**
+3. **Streamlit :**
     Aller sur le port `http://localhost:8501`
     Lors de la première utilisation lancer l'ingestion et échauffer le modèle d'embedding avec une question.
     L'installation de l'embedding sur le service peut prendre jusqu'à 5min.
