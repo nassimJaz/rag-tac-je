@@ -10,6 +10,7 @@ RUN pip install --upgrade pip && \
 COPY app/ ./app
 COPY st_app.py . 
 COPY cli_ans.py . 
+COPY docs/ ./docs
 
 EXPOSE 8501
 CMD ["streamlit", "run", "st_app.py", "--server.port=8501", "--server.address=0.0.0.0"]
