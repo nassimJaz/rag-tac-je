@@ -1,0 +1,9 @@
+venv*/
+.env
+results_*.json
+**/__pycache__/
+**/*.pyc
+**/*.pyo
+**/*.pyd
+**/vector_basis/
+qdrant_storage/
