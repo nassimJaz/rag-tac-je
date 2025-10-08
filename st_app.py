@@ -54,7 +54,7 @@ with col1:
     st.title("Chatbot JE")
 with col2:
     if st.button("Lancer l'ingestion"):
-        with st.spinner("Ingestion en cours..."):
+        with st.spinner("Ingestion en cours, soyez très patient svp ..."):
             try:
                 ingest()
                 st.success("Ingestion terminée avec succès!")
