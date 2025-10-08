@@ -26,7 +26,7 @@ class DocumentLoader:
         self.csv_delimiter = load_secret.get_csv_delimiter()
         self._list_docs = []  # Stores the loaded Haystack Document objects
         self.validator = FileValidator(
-            allowed_extensions=[ ".pdf", ".csv", ".json"],
+            allowed_extensions=[ ".pdf", ".csv", ".json", ".txt", ".md"],
             max_size_mb=100,
             base_dir=self.file_dir
         )
